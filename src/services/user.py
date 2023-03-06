@@ -5,6 +5,7 @@ from src import db
 class UserService:
     """用户逻辑层
     """
+
     # 新增用户
     def create_user(user):
         u = User()
@@ -13,3 +14,7 @@ class UserService:
 
         db.session.add(u)
         db.session.commit()
+
+
+    def get_user(self):
+        return 200
